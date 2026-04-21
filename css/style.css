@@ -2,7 +2,7 @@
   --bg: #f5f4f0;
   --fg: #111;
   --fg-dim: #888;
-  --font: 'Outfit', -apple-system, sans-serif;
+  --font: 'Inter', sans-serif;
 }
 
 *, *::before, *::after {
@@ -121,7 +121,7 @@ strong {
 
 .wordmark {
   font-size: clamp(72px, 12vw, 160px);
-  font-weight: 900;
+  font-weight: 400;
   line-height: 0.88;
   letter-spacing: -0.04em;
   white-space: nowrap;
@@ -265,8 +265,8 @@ strong {
 
 .info-grid {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
   margin-bottom: 64px;
 }
 
