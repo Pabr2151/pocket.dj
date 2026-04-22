@@ -198,14 +198,15 @@ strong {
   border-radius: 2px;
 }
 
-.card-placeholder {
+.card-image img {
   width: 100%;
   height: 100%;
-  background: #d9d8d4;
+  object-fit: cover;
+  display: block;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.project-card:hover .card-placeholder {
+.project-card:hover .card-image img {
   transform: scale(1.03);
 }
 
@@ -288,24 +289,23 @@ strong {
   padding: 4px 0;
 }
 
-.info-logo {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 8px;
+.specs-builds {
+  margin-top: 24px;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
-.info-logo-placeholder {
-  width: 100px;
-  height: 100px;
-  background: var(--fg);
-  color: var(--bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 24px;
-  border-radius: 12px;
+.specs-builds p {
+  margin-bottom: 6px;
+}
+
+.specs-builds-label {
+  font-weight: 500;
+  color: var(--fg);
+  margin-bottom: 8px !important;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .info-right p {
